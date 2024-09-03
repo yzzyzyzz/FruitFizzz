@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(235, 248, 231);
+}
+
+h1 {
+    color: #333;
+}
+
+p {
+    font-size: 18px;
+    color: #666;
+}
+
+/* Navbar styles */
+.navbar {
+    z-index: 1000; /* Ensure navbar is above other elements */
+    position: relative; /* Ensure z-index is effective */
+}
+
+/* Navbar text color */
+.navbar-nav .nav-link {
+    color: black; /* Default text color */
+    font-weight: bold; /* Make text bold */
+}
+
+.navbar-nav .nav-link.active {
+    color: white; /* Color for the active link */
+    background-color: #FFCC33; /* Optional: Highlight background color for the active link */
+}
+
+.navbar-brand {
+    color: black; /* Color for the brand text */
+    font-weight: bold; /* Make brand text bold */
+    font-size: 1.5rem; /* Increase font size for the brand name */
+}
+
+.navbar-brand img {
+    vertical-align: middle; /* Align image vertically with text */
+}
+
+/* Ensure the navbar adjusts for smaller screens */
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 120px; /* Adjust image size for smaller screens */
+        height: auto; /* Maintain aspect ratio */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 14px; /* Adjust font size for smaller screens */
+    }
+}
+
+/* Button styles */
+.btn-info {
+    background-color: #FFCC33; /* Yellow background */
+    border-color: #FFCC33; /* Yellow border */
+}
+
+.btn-info:hover {
+    background-color: #4CAF50; /* Green background on hover */
+    border-color: #4CAF50; /* Green border on hover */
+}
+
+/* Card text color */
+.card-text {
+    color: black; /* Black text color */
+}
+
+/* Ensure card overlay text is readable */
+.card-img-overlay {
+    position: relative; /* Position relative to stack with z-index */
+    background-color: #FFCC33;
+}
+
+.btn-yellow {
+    background-color: #FFCC33;
+    color: #000;
+    border: none;
+}
+
+.btn-yellow:hover {
+    background-color: #ff3333; /* Change hover color to red */
+    color: #fff;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%280, 0, 0, 1%29' stroke-width='2' linecap='round' linejoin='round' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
